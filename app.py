@@ -94,8 +94,7 @@ import os
 # ======================================
 # ENCABEZADO CON LOGO Y TÍTULO CENTRADO
 # ======================================
-logo_path = os.path.join("Logo", "logop.png")  # ✅ Carpeta con mayúscula
-
+logo_path = "logo/logop.png"
 if os.path.exists(logo_path):
     with open(logo_path, "rb") as f:
         logo_base64 = base64.b64encode(f.read()).decode("utf-8")
@@ -103,14 +102,13 @@ if os.path.exists(logo_path):
         f"""
         <div class="app-header">
             <img src="data:image/png;base64,{logo_base64}" alt="Logo">
-            <h1>Calculadora de Medicamentos 💊</h1>
         </div>
         """,
         unsafe_allow_html=True
-    )
+)
 else:
-   # st.warning("⚠️ No se encontró el logo en la ruta esperada: " + logo_path)
-    st.title("")
+    st.title("🖩 calculadora")
+
 
 
 # ======================================
@@ -239,6 +237,7 @@ st.markdown("""
         <p class="texto">Está destinado exclusivamente para uso institucional y bajo las políticas de privacidad y seguridad de la compañia . Cualquier divulgación, copia o uso no autorizado está estrictamente prohibido.</p>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
