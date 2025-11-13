@@ -94,7 +94,7 @@ import os
 # ======================================
 # ENCABEZADO CON LOGO Y TÍTULO CENTRADO
 # ======================================
-logo_path = os.path.join("Logo", "logo1.png")  # ✅ Carpeta con mayúscula
+logo_path = os.path.join("Logo", "logo.png")  # ✅ Carpeta con mayúscula
 
 if os.path.exists(logo_path):
     with open(logo_path, "rb") as f:
@@ -239,6 +239,7 @@ st.markdown("""
         <p class="texto">Está destinado exclusivamente para uso institucional y bajo las políticas de privacidad y seguridad de la compañia . Cualquier divulgación, copia o uso no autorizado está estrictamente prohibido.</p>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
