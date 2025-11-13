@@ -94,8 +94,7 @@ import os
 # ======================================
 # ENCABEZADO CON LOGO Y TÍTULO CENTRADO
 # ======================================
-st.write("Ruta actual:", os.getcwd())
-st.write("¿Existe logo?:", os.path.exists(logo_path))
+
 
 logo_path = os.path.join("Logo", "logo1.png")
 if os.path.exists(logo_path):
@@ -238,6 +237,7 @@ st.markdown("""
         <p class="texto">Está destinado exclusivamente para uso institucional y bajo las políticas de privacidad y seguridad de la compañia . Cualquier divulgación, copia o uso no autorizado está estrictamente prohibido.</p>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
