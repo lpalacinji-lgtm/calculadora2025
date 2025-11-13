@@ -110,7 +110,7 @@ if os.path.exists(logo_path):
     )
 else:
    # st.warning("⚠️ No se encontró el logo en la ruta esperada: " + logo_path)
-   # st.title("🖩 Calculadora de Medicamentos 💊")
+    st.title("")
 
 
 # ======================================
@@ -239,6 +239,7 @@ st.markdown("""
         <p class="texto">Está destinado exclusivamente para uso institucional y bajo las políticas de privacidad y seguridad de la compañia . Cualquier divulgación, copia o uso no autorizado está estrictamente prohibido.</p>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
